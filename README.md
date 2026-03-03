@@ -1,19 +1,12 @@
-# API Documentation
-
-This API provides proxy management services for devices. All endpoints require a `device_id` to identify the requesting device.
+## API Documentation
 
 ## Base URL
 ```
-https://ariiflexapp.vercel.app/
+https://adityastream*********.cloud/
 ```
 
 ## Authentication
-No authentication required. Requests are identified by `device_id` in the request body.
-
-## Common Headers
-```
-Content-Type: application/json
-```
+Requests are identified by `device_id` in the request body.
 
 ## Endpoints
 
@@ -79,7 +72,7 @@ Initializes a device and retrieves configuration information.
   ```
 
 ### POST /api/start
-Requests a proxy assignment for the device. If the device already has an assigned proxy, returns the existing one. Proxies are automatically released after 1 hour of inactivity.
+Requests a proxy assignment for the device. If the device already has an assigned proxy, returns the existing one. Proxies are automatically released after 30m of inactivity.
 
 #### Request Body
 ```json
